@@ -6,13 +6,13 @@ import AddEmployee from "./components/AddEmployee";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UpdateEmployee from "./components/UpdateEmployee ";
 
-
+const basename = '/em-project-view'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<ListEm />} />
           <Route path="/addEmployee" element={<AddEmployee />} />
