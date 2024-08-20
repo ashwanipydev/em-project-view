@@ -6,7 +6,7 @@ import AddEmployee from "./components/AddEmployee";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UpdateEmployee from "./components/UpdateEmployee ";
 
-const basename = '/em-project-view'
+const basename = '/em-project-view/employees'
 
 function App() {
   return (
