@@ -1,5 +1,5 @@
 import axios from  'axios';
-const EMPOLOYEE_SAPI_BASE_URL = 'https://my-spring-boot-app-latest.onrender.com';
+const EMPOLOYEE_SAPI_BASE_URL = 'https://my-spring-boot-app-latest.onrender.com/employees';
 
 class EmployeeService{
     saveEmployee(employee){
