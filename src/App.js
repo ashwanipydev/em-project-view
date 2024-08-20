@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import ListEm from "./components/ListEm";
+import AddEmployee from "./components/AddEmployee";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UpdateEmployee from "./components/UpdateEmployee ";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ListEm />} />
+          <Route path="/addEmployee" element={<AddEmployee />} />
+          <Route path="/editEmployee/:id" element={<UpdateEmployee />} />
+
+        </Routes>
+      </BrowserRouter>
+
+      {/* <ListEm />
+      <AddEmployee /> */}
+
+      <footer className="flex justify-center py-6 bottom-0 fixed mx-auto w-full">
+        <p className="text-gray-500">© 2024 EM Service. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
