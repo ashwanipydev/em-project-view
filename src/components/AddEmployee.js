@@ -26,6 +26,7 @@ const handleInputChange = (event) => {
     .then((res) => (console.log(res)))
     .catch((err)=>(console.log(err)));
     
+    
     navigate("/"); // Redirect to the employees list after saving
   };
 
