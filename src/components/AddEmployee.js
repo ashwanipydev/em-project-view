@@ -28,6 +28,7 @@ const handleInputChange = (event) => {
     
     
     navigate("/"); // Redirect to the employees list after saving
+    window.location.reload();
   };
 
   const navigate = useNavigate();
